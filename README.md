@@ -52,4 +52,13 @@ Your Risc-v assembly-code shoud be run with following command.
 $ make all
 $ ./main <file_name> <register_name>
 ```
-ex. ./main input/recursion x5
+Ex.
+```shell
+$ ./main input/recursion x5
+```
+
+# Remark
+* x2-register is sp, it points to the top of stack at the very beginning.
+* lw-instruction must be followed by nop-instruction to prevent data-hazard.
+* Other details can be specified with sample-input in input/ directory.
+
