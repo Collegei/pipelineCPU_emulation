@@ -2,42 +2,42 @@
 The processor emulator supports following Risc-v instruction.
 <table>
   <tr>
-    <td>Instruction</td
-                    <td>Remark</td>
+    <td><strong>Instruction</strong></td>
+            <td><strong>Remark</strong></td>
   </tr>
   <tr>
-    <td>**add rd, rs1, rs2**</td>
+    <td>add rd, rs1, rs2</td>
   </tr>
   <tr>
-    <td>**sub rd, rs1, rs2**</td>
+    <td>sub rd, rs1, rs2</td>
   </tr>
   <tr>
-    <td>**and rd, rs1, rs2**</td>
+    <td></td>and rd, rs1, rs2</td>
   </tr>
   <tr>
-    <td>**or rd, rs1, rs2**</td>
+    <td>or rd, rs1, rs2</td>
   </tr>
   <tr>
-    <td>**lw rd constant(rs1)**</td>
+    <td>lw rd constant(rs1)</td>
   </tr>
   <tr>
-    <td>**addi rd, rs1, constant**</td>
+    <td>addi rd, rs1, constant</td>
   </tr>
   <tr>
-    <td>**sw rs2, constant(rs1)**</td>
+    <td>sw rs2, constant(rs1)</td>
   </tr>
   <tr>
-    <td>**beq rs1, rs2, constant**</td>
+    <td>beq rs1, rs2, constant</td>
   </tr>
   <tr>
-    <td>**bne rs1, rs2, constant**</td>
+    <td>bne rs1, rs2, constant</td>
   </tr>
   <tr>
-    <td>**end**</td>
-    <td>**opcode = 1000000 (at the end of code)</td>
+    <td>end</td>
+    <td>opcode = 1000000 (at the end of code)</td>
   </tr>
   <tr>
-    <td>**nop**</td>
+    <td>nop</td>
     <td>opcode = 0000000 (none)</td>
   </tr> 
 </table>
@@ -50,7 +50,6 @@ There are some examples in input/ directory.
 Your Risc-v assembly-code shoud be run with following command.
 ```shell
 $ make all
-$ ./main <riscv-code> <register-name>
+$ ./main <file_name> <register_name>
 ```
-```
-* ex. ./main input/recursion x5
+ex. ./main input/recursion x5
