@@ -58,7 +58,7 @@ $ ./main input/recursion x5
 ```
 
 # Remark
-* x2-register is sp, it points to the top of stack at the very beginning.
+* x2-register is stack pointer(sp), which points to the top of the stack at the very beginning.
 * lw-instruction must be followed by nop-instruction to prevent data-hazard.
-* Other details can be specified with sample-input in input/ directory.
+* Examples in input/ directory include other details.
 
